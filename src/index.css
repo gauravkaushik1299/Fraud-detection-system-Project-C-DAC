@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Ensured all hero sections have the same color */
+.hero-container,
+.hero-container2,
+.hero-container3,
+.hero-container4 {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* Removed Unused Portion */
+/* Removed .hero-section background-color styles since they're now unified */
+
+/* Removed the unused portion */
+/* src/components/Hero.css */
+/* . {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+} */
+
+/* Removed .hero1 and .hero-section */
+/* The styles are unified under .hero, and we don't need the .hero1 */
+
+.hero {
+  background-color: #f8f9fa;
+  padding: 50px;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.header {
+  width: 100%;
+  padding: 0;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  height: 100px;
+  transition: top 0.3s; /* Added transition for auto-hide effect */
+}
+
+.nav-button {
+  display: block;
+  padding: 10px 20px;
+  background-color: #01070d;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none; 
+  transition: background-color 0.7s ease;
+}
+
+.nav-button:hover {
+  background-color: #535960;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+}
+
+/* General container styling */
+.hero-container {
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 130px;
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1c1e21;
+  margin-bottom: 50px;
+}
+
+/* Flexbox layout for the statistics */
+.hero-stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-stat {
+  width: 30%;
+  flex: 1;
+  max-width: 30%;
+  padding: 20px;
+}
+
+.vertical-divider {
+  width: 1px;
+  height: 100px;
+  background-color: #ddd;
+}
+
+/* Specific styles for percentage and description */
+.stat-percentage {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0052cc; /* Custom blue color */
+  margin-bottom: 15px;
+}
+
+.stat-description {
+  font-size: 1.125rem;
+  color: #1c1e21;
+}
+
+.stat-description a {
+  color: #0052cc;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .hero-stats {
+    flex-direction: column;
+  }
+
+  .vertical-divider {
+    display: none;
+  }
+
+  .hero-stat {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.container {
+  margin-left: 100px;
+  padding: 40px 20px;
+  text-align: center;
+  width: 1200px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.underline-input {
+  border: none;
+  width: 100%;
+  border-bottom: 2px solid #ccc;
+  padding: 8px 0;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.underline-input:focus {
+  border-bottom-color: #6200ea;
+  background-color: #ddd9d9;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.submit-button {
+  grid-column: span 3;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Added animation to auto-hide navbar */
+.hidden {
+  top: -100px; /* Move navbar out of view */
+}
+
+/* Transition for showing and hiding the navbar */
