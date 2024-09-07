@@ -10,6 +10,7 @@ This check is performed by crosschecking the transaction number againt the datab
 
 These are the steps to setup the project:-
 
+After Downloading the files, run npm i command in command prompt opened in the download location
 
 Download Postgre and match the credentials to the ones in server.js file.
 
